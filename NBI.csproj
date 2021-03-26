@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08DF313D-A99B-4088-BE97-1B3DF61469F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NBI</RootNamespace>
+    <AssemblyName>NBI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAbout.Designer.cs">
+      <DependentUpon>FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAuth.Designer.cs">
+      <DependentUpon>FAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCalendarPlans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCalendarPlans.Designer.cs">
+      <DependentUpon>FCalendarPlans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDepartments.Designer.cs">
+      <DependentUpon>FDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FExecutionTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FExecutionTasks.Designer.cs">
+      <DependentUpon>FExecutionTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIndividuals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIndividuals.Designer.cs">
+      <DependentUpon>FIndividuals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPartners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPartners.Designer.cs">
+      <DependentUpon>FPartners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPositions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPositions.Designer.cs">
+      <DependentUpon>FPositions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProjects.Designer.cs">
+      <DependentUpon>FProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRepMasterSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRepMasterSchedule.Designer.cs">
+      <DependentUpon>FRepMasterSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRepTaskPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRepTaskPerformance.Designer.cs">
+      <DependentUpon>FRepTaskPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSettingTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSettingTasks.Designer.cs">
+      <DependentUpon>FSettingTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUsers.Designer.cs">
+      <DependentUpon>FUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nbiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nbiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="nbiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nbiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FAbout.resx">
+      <DependentUpon>FAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAuth.resx">
+      <DependentUpon>FAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCalendarPlans.resx">
+      <DependentUpon>FCalendarPlans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDepartments.resx">
+      <DependentUpon>FDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FExecutionTasks.resx">
+      <DependentUpon>FExecutionTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIndividuals.resx">
+      <DependentUpon>FIndividuals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPartners.resx">
+      <DependentUpon>FPartners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPositions.resx">
+      <DependentUpon>FPositions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProjects.resx">
+      <DependentUpon>FProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRepMasterSchedule.resx">
+      <DependentUpon>FRepMasterSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRepTaskPerformance.resx">
+      <DependentUpon>FRepTaskPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSettingTasks.resx">
+      <DependentUpon>FSettingTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUsers.resx">
+      <DependentUpon>FUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="nbiDataSet.xsc">
+      <DependentUpon>nbiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="nbiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nbiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nbiDataSet.xss">
+      <DependentUpon>nbiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="nbiDataSet1.xsc">
+      <DependentUpon>nbiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="nbiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nbiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nbiDataSet1.xss">
+      <DependentUpon>nbiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
